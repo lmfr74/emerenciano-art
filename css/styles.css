@@ -5,3 +5,12 @@
  :root {
     --bs-body-bg: var(--bs-gray-100);
   }
+
+  a {
+    font-weight: bolder;
+  }
+
+  .col {
+    background-color: rgba(255, 255, 255, .05);
+    padding: 16px;
+  }
