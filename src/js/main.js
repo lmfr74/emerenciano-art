@@ -14,15 +14,15 @@ function createMenuItems(title) {
   const navBarData = [
     {
       id: "Biografia",
-      href: "./Biografia.html",
+      href: "./biografia.html",
     },
     {
       id: "Pinturas",
-      href: "./Pinturas.html",
+      href: "./pinturas.html",
     },
     {
       id: "Desenhos",
-      href: "./Desenhos.html",
+      href: "./desenhos.html",
     },
     {
       id: "Simbolos",
@@ -30,15 +30,15 @@ function createMenuItems(title) {
     },
     {
       id: "Atelier",
-      href: "./Atelier.html",
+      href: "./atelier.html",
     },
     {
       id: "Contacto",
-      href: "./Contacto.html",
+      href: "./contacto.html",
     },
     {
       id: "Links",
-      href: "./Links.html",
+      href: "./links.html",
     },
   ];
 
