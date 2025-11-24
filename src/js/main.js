@@ -1,8 +1,8 @@
-'option explicit';
+"option explicit";
 
 function createPage(title, prefix, n) {
-    if (title) createMenuItems(title);
-    if (prefix) createGaleryItems(title, prefix, n);
+  if (title) createMenuItems(title);
+  if (prefix) createGaleryItems(title, prefix, n);
 }
 
 function createMenuItems(title) {
@@ -43,7 +43,7 @@ function createMenuItems(title) {
   ];
 
   let html = "";
-  navBarData.forEach(d => {
+  navBarData.forEach((d) => {
     d.title = d.id;
     const cls = title === d.title ? "active" : "";
     html += `<li class="nav-item"><a class="nav-link ${cls}" href="${d.href}">${d.title}</a></li>`;
@@ -59,17 +59,17 @@ function createGaleryItems(title, prefix, n) {
   for (i = 1; i <= n; i++) {
     const imageData = {
       href: `images/${title}/${prefix} (${i}).jpg`,
-      alt: `${prefix} #${i}`
+      alt: `${prefix} #${i}`,
     };
 
     galeryData.push(imageData);
   }
 
   let html = "";
-  galeryData.forEach(d => {
+  galeryData.forEach((d) => {
     html += `<div class="col d-flex align-items-center"><img class="img-fluid mx-auto" src="${d.href}" alt="${d.alt}" /></div>`;
   });
-  
+
   const navbarItemsElement = document.getElementById("pageGalery");
   navbarItemsElement.innerHTML = html;
 }
